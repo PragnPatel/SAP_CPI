@@ -1,0 +1,840 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn.fiege.com:PI:ZIF:DKV" targetNamespace="urn.fiege.com:PI:ZIF:DKV">
+   <xsd:element name="MT_DKV_TANKDATEN" type="DT_DKV_TANKDATEN" />
+   <xsd:complexType name="DT_DKV_TANKDATEN">
+      <xsd:sequence>
+         <xsd:element name="RT0">
+            <xsd:annotation>
+               <xsd:documentation>
+               Infosatz Hauptkunde
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Satzart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RT0 SATZART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Satznummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LAUFENDE SATZNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Lieferant_DKV" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LIEFERANT DKV
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Hauptkundennummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        HAUPTKUNDENNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Hauptkundenname" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KURZNAME HAUPTKUNDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy1" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „00“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Abrechnungsdatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ABRECHNUNGSDATUM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Erstellungsdatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ERSTELLUNGSDATUM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Erstellungszeit" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ERSTELLUNGSZEIT
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="DKV_Umsatzsteuernummer" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        DKV USt. ID-NUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Hauptkunde_Umsatzsteuernummer" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        HAUPTKUND USt. ID-NUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy2" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zeilenende" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        CARRIAGE RETURN LINE FEED ZEILENENDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RT1">
+            <xsd:annotation>
+               <xsd:documentation>
+               Infosatz – Kunde
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Satzart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RT1 SATZART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Satznummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LAUFENDE SATZNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kundennummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KUNDENNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kundenname" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KURZNAME KUNDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy3" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „00“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zahlungsziel_Kunde" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ZAHLUNGSZIEL KUNDE (TAGE)
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kennzeichen_Bankeinzug" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KENNZEICHEN BANKEINZUG
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zahldatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ZAHLBAR AM / EINZUG AM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Rechnungsnummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RECHNUNGSNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kunden_Umsatzsteuernummer" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KUNDEN USt. ID-NUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy4" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zeilenende" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        CARRIAGE RETURN LINE FEED ZEILENENDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RT5" maxOccurs="unbounded">
+            <xsd:annotation>
+               <xsd:documentation>
+               Transaktionen
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Satzart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RT5 SATZART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Satznummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LAUFENDE SATZNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kartennummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        CK-NUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="KFZ_Kennzeichen" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KFZ KENNZEICHEN/
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy5" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="KM_Stand" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KM-STAND
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Lieferdatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LIEFERDATUM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Lieferzeit" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LIEFERZEIT
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Lieferscheinnummer" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        BON/LIEFERSCHEINNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Erfassungsart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ERFASSUNGSART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Servicestellennummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        SERVICESTELLENNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Servicestellenname" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        SERVICESTELLENAME
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Servicestellenlandnummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        SERVICESTELLENLANDNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Warenart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        WARENART (PRODUKTCODE)
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Warenbezeichnung" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        WARENBEZEICHNUNG
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Menge" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        MENGE pro Einheit
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Menge" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 16
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Verkaufspreis_SLW_inkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VERKAUFSPREIS IN SLW INKL. UST
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Umsatzsteuersatz_Prozent" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        USt. SATZ IN %
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Verkaufsbetrag_SLW_inkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VERKAUSBETRAG IN SLW INKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Verkaufsbetrag" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 19
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy6" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Nachlass_SLW_exkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        NACHLASS IN SLW EXKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Nachlass" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 21
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy7" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="ServiceFEE_SLW_exkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        SERVICE FEE IN SLW EXKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Service" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 23
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Gesamtwert_SLW_inkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        GESAMTWERT IN SLW INKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Gesamtwert_inkl_USt" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 24
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Umsatzsteuerbetrag_SLW" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        USt. IN SLW
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Umsatzsteuerbetrag" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 25
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Gesamtwert_SLW_exkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        GESAMTWERT IN SLW EXKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Gesamtwert_exkl_USt" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 26
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Waehrungsbezeichnung_SLW" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        WÄHRUNGSBEZEICHNUNG SLW
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Gesamtwert_ZW_inkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        GESAMTWERT IN ZW INKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Gesamtwert_ZW" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 28
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy8" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „00000000000“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Dummy8" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 29
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Waehrungsbezeichnung_ZW" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        WÄHRUNGSBEZEICHNUNG ZW
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Nachlasskonditionen" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        NACHLASSKONDITION
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Nachlasskonditionsart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        NACHLASSKONDITIONSART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Servicefeekondition" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        SERVICEFEEKONDITION
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Servicefeekonditionsart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        SERVICEFEEKONDITIONSART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Rechnungsnummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RECHNUNGSNUMMER (GUTSCHRIFT / NACHBELASTUNG)
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Abrechnungsdatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ABRECHNUNGSDATUM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kennzeichen_Gutschrift" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KENNZEICHEN GUTSCHRIFT/NACHBEL.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Rechnungsnr_Laenderrechnung" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RECHNUNGSNR. LÄNDERRECHNUNG
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Prozentsatz_Erstatungsfaehige_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        %-SATZ ERSTATTUNGSFÄHIGE USt
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Wert_Erstattungsfaehige_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        WERT ERSTATTUNGSFÄHIGE USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Wert_Erstattungsfaehige_USt" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 40
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Identnummer" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        IDENT NR.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kennzeichen_Autobahnstation" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KENNZEICHEN AUTOBAHNSTATION
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Hinweis" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        HINWEIS
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy9" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zeilenende" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        CARRIAGE RETURN LINE FEED ZEILENENDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RT7">
+            <xsd:annotation>
+               <xsd:documentation>
+               Summensatz Kunde
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Satzart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RT7 SATZART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Satznummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LAUFENDE SATZNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Kundennummer_RT5" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KUNDENNUMMER RT5
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Anzahl_Transaktionen_RT5" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ANZAHL TRANSAKTIONEN RT5
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy10" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „000000000000000“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy11" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        “+”
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy12" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „000000000000000“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy13" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        “+”
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Gesamtwert_ZW_inkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        GESAMTWERT IN ZW INKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Gesamtwert_ZW_inkl_USt" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 7
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Gesamtwert_ZW_exkl_USt" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        GESAMTWERT IN ZW EXKL. USt.
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Vorzeichen_Gesamtwert_ZW_exkl_USt" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        VORZEICHEN FELD 9
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Waehrungsbezeichung_ZW" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        WÄHRUNGSBEZEICHNUNG ZW
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy14" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        “000000000”
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy15" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        “000000000000000+”
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy16" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zeilenende" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        CARRIAGE RETURN LINE FEED ZEILENENDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="RT9">
+            <xsd:annotation>
+               <xsd:documentation>
+               Summensatz Gesamt
+               </xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="Satzart" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        RT9 SATZART
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Satznummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LAUFENDE SATZNUMMER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Lieferant_DKV" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LIEFERANT – DKV -
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Hauptkundennummer" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        HAUPTKUNDENNR. RT0 SATZ
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Hauptkundenname" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        KURZNAME HAUPTKUNDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy17" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „00“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Abrechnungsdatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ABRECHNUNGSDATUM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Erstellungsdatum" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ERSTELLUNGSDATUM
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Erstellungszeit" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ERSTELLUNGSZEIT
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Gesamtanzahl_Transaktionen" type="xsd:integer">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        ANZAHL TRANSAKTIONEN GESAMT
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy18" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „000000000000000+“
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy19" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        „000000000000000+ “
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Dummy20" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        LEER
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Zeilenende" type="xsd:string">
+                     <xsd:annotation>
+                        <xsd:documentation>
+                        CARRIAGE RETURN LINE FEED ZEILENENDE
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

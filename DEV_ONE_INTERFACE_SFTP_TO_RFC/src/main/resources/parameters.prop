@@ -1,0 +1,26 @@
+#Tue Jul 14 10:16:00 UTC 2026
+Archive_Directory=/usr/sap/interfaces/datacenter1-appdata/Archive/SAP_PO_SAVE/Tankkarten/PAQ/BS_DKV_TANKDATEN_Q/DKV/save
+MessageFlow_1_allowDeprecatedAlgorithms=0
+MessageFlow_1_authentication=user_password
+MessageFlow_1_connectTimeout=10000
+MessageFlow_1_credential_name=
+MessageFlow_1_emptyFileHandling=processFile
+MessageFlow_1_host=
+MessageFlow_1_idempotentRepository=database
+MessageFlow_1_maximumFileSize=40
+MessageFlow_1_maximumReconnectAttempts=3
+MessageFlow_1_noop=move
+MessageFlow_1_path=/usr/sap/interfaces/datacenter1-appdata/Archive/SAP_PO_SAVE/Tankkarten/PAQ/BS_DKV_TANKDATEN_Q/DKV
+MessageFlow_1_proxyAlias=
+MessageFlow_1_proxyProtocol=socks5
+MessageFlow_1_readLockCheckInterval=5000
+MessageFlow_1_regex_filter=0
+MessageFlow_1_scheduleKey=<row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>dateType</cell><cell>DAILY</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>toInterval</cell><cell>24</cell></row><row><cell>fromInterval</cell><cell>0</cell></row><row><cell>OnEverySecond</cell><cell>10</cell></row><row><cell>timeType</cell><cell>TIME_SECOND_INTERVAL</cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>throwExceptionOnExpiry</cell><cell>true</cell></row><row><cell>second</cell><cell>0/10</cell></row><row><cell>minute</cell><cell>*</cell></row><row><cell>hour</cell><cell>0-24</cell></row><row><cell>day_of_month</cell><cell>?</cell></row><row><cell>month</cell><cell>*</cell></row><row><cell>dayOfWeek</cell><cell>*</cell></row><row><cell>year</cell><cell>*</cell></row><row><cell>startAt</cell><cell></cell></row><row><cell>endAt</cell><cell></cell></row><row><cell>attributeBehaviour</cell><cell>isRunOnceRequired,isScheduleOnDayRequired,isScheduleRecurRequired</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>0/10+*+0-23+?+*+*+*&amp;trigger.timeZone\=Etc/GMT</cell></row>
+MessageFlow_1_stopOnException=1
+MessageFlow_1_useClusterLock=0
+MessageFlow_3_destination=
+MessageFlow_3_newConnection=0
+MessageFlow_3_transactioncommit=1
+SAP_MessageType=ZIF_DKV_BOOK
+SAP_Sender=BS_DKV_TANKDATEN_D
+SAP_SenderInterface=SI_OB_DKV_TANKDATEN
