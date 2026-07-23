@@ -1,5 +1,5 @@
 #Store metainfo properties
-#Thu Jul 23 07:25:39 UTC 2026
+#Thu Jul 23 07:26:03 UTC 2026
 SAP-MigrationApproach=STANDARD
 SAP-PIPOMigrated=true
 description=System\: POD, System version\: 7.50, Pattern\: Point-to-Point Asynchronous, Migration Approach\: Standard, Type\: Integrated Configuration, PO Artifact Name\: |BS_DKV_TANKDATEN_D|SI_OB_DKV_TANKDATEN|urn.fiege.com\:PI\:ZIF\:DKV||
